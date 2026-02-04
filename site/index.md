@@ -7,7 +7,7 @@ socialImage: ""
 ---
 
 <p class="l-first">
-  Research and experiments on technology
+  Research and experiments
 </p>
 
 <p class="l-second">
