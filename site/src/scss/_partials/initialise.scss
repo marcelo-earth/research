@@ -1,0 +1,116 @@
+:root {
+  line-height: $RATIO + 0.2;
+  font-family: $FONT_NORMAL;
+  color: var(--THEME_COLOR, white);
+  background: var(--THEME_BACKGROUND, black);
+}
+
+@media (min-width: 800px) and (min-height: 500px) {
+  :root {
+    font-size: 1.375rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  background-color: inherit;
+  font-family: inherit;
+  color: inherit;
+  overflow-wrap: break-word;
+  margin: 0;
+  padding: 0;
+}
+
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+body,
+dd,
+dl,
+dt,
+figcaption,
+figure,
+h1,
+h2,
+h3,
+h4,
+li,
+ol,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  scroll-behavior: smooth;
+  font-size: inherit;
+  min-height: 100vh;
+}
+a {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  text-decoration-thickness: 0.2rem;
+  text-decoration-skip-ink: auto;
+  cursor: pointer;
+  text-decoration-color: var(--THEME_UNDERLINE, black);
+}
+
+a:focus,
+a:active {
+  color: var(--THEME_HOVER/20, black);
+}
+
+input::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  line-height: normal;
+}
+
+img {
+  max-width: 100%;
+  margin: 0 !important;
+}
+
+img[data-onpage] {
+  margin-top: 2rem !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-play-state: paused !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+[tabindex="-1"]:focus {
+  outline: none;
+}
+
+/* Mermaid styles */
+
+.mermaid span {
+  font-family: $FONT_NORMAL !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .mermaid .label-container,
+  .mermaid rect {
+    fill: transparent !important;
+    stroke: #ECECEC !important;
+  }
+  .mermaid span {
+    fill: transparent !important;
+    color: #ECECEC !important;
+  }
+  .mermaid .edgeLabel {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+  }
+  .node path {
+    fill: transparent !important;
+    stroke: #ffffff !important;
+  }
+}

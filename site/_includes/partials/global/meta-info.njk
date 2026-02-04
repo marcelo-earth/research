@@ -1,0 +1,45 @@
+{% if title === site.name %}
+  {% set pageTitle = site.name %}
+{% else %}
+  {% set pageTitle = title + ' - ' + site.name %}
+{%- endif -%}
+
+{% if metaTitle %}
+  {% set pageTitle = metaTitle %}
+{% endif %}
+
+<title>{{ pageTitle }}</title>
+
+<link rel="canonical" href="{{ site.url }}{{ page.url }}"/>
+
+<meta property="og:site_name" content="{{ site.name }}"/>
+<meta property="og:title" content="{{ pageTitle }}"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@marcelo_earth"/>
+{% if site.authorHandle %}
+  <meta name="twitter:creator" content="@{{ site.authorHandle | replace('@', '') }}"/>
+{% endif %}
+<meta name="twitter:title" content="{{ pageTitle }}"/>
+
+{% if metaDescription %}
+  <meta name="description" content="{{ metaDescription }}"/>
+  <meta name="twitter:description" content="{{ metaDescription }}"/>
+  <meta property="og:description" content="{{ metaDescription }}"/>
+{% endif %}
+
+{% set socialImage = social_image if social_image else site.socialImage %}
+
+{% if socialImage %}
+  <meta property="og:image" content="{{ socialImage }}"/>
+  <meta name="twitter:image" content="{{ socialImage }}"/>
+  <meta property="og:image:alt" content="Page image for {{ site.name }}"/>
+  <meta name="twitter:image:alt" content="Page image for {{ site.name }}"/>
+{% endif %}
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">

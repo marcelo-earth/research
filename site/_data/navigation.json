@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "text": "Home",
+      "url": "/",
+      "external": false
+    },
+    {
+      "text": "Papers",
+      "url": "/posts",
+      "external": false
+    },
+    {
+      "text": "Consultation",
+      "url": "https://intro.co/MarceloArias",
+      "external": true
+    }
+  ]
+}

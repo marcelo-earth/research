@@ -1,0 +1,34 @@
+.l-stack {
+  display: block;
+}
+
+.l-stack > * + * {
+  margin-top: 1rem;
+}
+
+.l-stack--large > * + * {
+  margin-top: 2rem;
+}
+
+.l-description {
+  font-weight: 500;
+}
+
+.l-first {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.l-second {
+  text-align: center;
+  color: var(--COLOR_DARK);
+}
+
+@media (max-width: 800px) {
+  .l-first {
+    font-size: $SCALE-1;
+  }
+  .l-second {
+    font-size: $SCALE-1;
+  }
+}
