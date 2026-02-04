@@ -1,6 +1,6 @@
 ---
 layout: "layouts/home.njk"
-title: "Research"
+title: "Research on Earth"
 postsHeading: Latest research
 allPostsText: See all papers
 socialImage: ""

@@ -1,5 +1,5 @@
 module.exports = {
-  name: "Research",
+  name: "Research on Earth",
   shortDesc:
     "Research papers and investigations by Marcelo Arias.",
   url: "https://research.marcelo.earth/",
