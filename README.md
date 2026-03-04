@@ -1,9 +1,9 @@
 <p align="center">
-  <h1 align="center">Made by Marcelo on Earth</h1>
+  <h1 align="center">Research by Marcelo on Earth</h1>
 </p>
 
 <p align="center">
-  Case studies about my experiences as a software creator.
+  Research and experiments from a software creator.
 </p>
 
 ![Preview](./.github/preview.png)
