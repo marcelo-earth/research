@@ -112,7 +112,7 @@ Now I found that amazing, because it means, at some point, we'll have a long wor
 
 ## Introducing ExtendedTokenizer
 
-That's why I made the `ExtendedTokenizer` library. This Python library is based on the `tiktoken` library, but we changed something: instead of generating 200K tokens, we go up to 250K.
+That's why I made [ExtendedTokenizer](https://github.com/marcelo-earth/extended-tokenizer). This Python library is based on the `tiktoken` library, but we changed something: instead of generating 200K tokens, we go up to 250K.
 
 BPE (Byte-Pair Encoding) is a tokenization algorithm that is used to tokenize text. But only frequently used pairs of bytes are assigned a number.
 
