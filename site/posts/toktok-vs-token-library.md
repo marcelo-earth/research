@@ -24,7 +24,7 @@ The idea is simple: spend the entire vocabulary budget on Spanish instead of spl
 Ok, here's what happens when you tokenize the same Spanish sentences with different tokenizers:
 
 ```
-Text: "El aprendizaje automatico permite a las maquinas aprender de los datos."
+Text: "El aprendizaje automático permite a las máquinas aprender de los datos."
 
 TokTok 32K (14 tokens): |El|aprendizaje|automa|tico|permite|a|las|ma|quinas|aprender|de|los|datos|.|
 GPT-4      (17 tokens): |El|aprend|iz|aje|automatic|o|permite|a|las|ma|qu|inas|aprender|de|los|datos|.|
