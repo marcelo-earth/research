@@ -7,7 +7,7 @@ tags:
   - ai
 ---
 
-So a transformer is composed by two parts: the encoder and the decoder. 
+So a transformer is composed of two parts: the encoder and the decoder. 
 
 Ok, the self-attention is the part of the encoder that is responsible for the attention mechanism.
 
@@ -31,7 +31,7 @@ BERT was only for encoding.
 
 GPT was only for decoding.
 
-Why we need encoding and decoding?
+Why do we need encoding and decoding?
 
 If you want to generate text and during training you let the model see the future:
 
@@ -65,7 +65,7 @@ Now the vector of `cat` generates an array of vectors, but not like its meaning,
 
 This is the key, because it generates a memory that then will be consulted by the decoder to generate the translation.
 
-Now inside the decoder, there are three levels operations in each layer.
+Now inside the decoder, there are three levels of operations in each layer.
 
 1. Self-attention (masked/causal)
 2. Cross-attention
