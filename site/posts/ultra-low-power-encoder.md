@@ -11,7 +11,7 @@ So a transformer is composed of two parts: the encoder and the decoder.
 
 Ok, the self-attention is the part of the encoder that is responsible for the attention mechanism.
 
-See the past is seeing the position of the previous tokens.
+Seeing the past means seeing the position of the previous tokens.
 
 For example:
 
@@ -59,7 +59,7 @@ The encoder makes a representation of the sentence for translation, for example:
 
 > El gato come pescado
 
-OK. Good! now, decoder generates the translation. But not without using *Self-Attention* to see the context of the sentence.
+OK. Good! Now, the decoder generates the translation. But not without using *Self-Attention* to see the context of the sentence.
 
 Now the vector of `cat` generates an array of vectors, but not like its meaning, it has self-attention now, so it's enriched with the context of the sentence. That's after many layers of self-attention.
 
@@ -75,7 +75,7 @@ The only part that meets the encoder and decoder is the cross-attention.
 
 ### When the attention formula is applied
 
-And the attention formula is applied in two times:
+And the attention formula is applied at two points:
 
 1. In the encoder, in the self-attention part.
 2. In the decoder, in the cross-attention part.
