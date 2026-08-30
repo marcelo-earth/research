@@ -50,12 +50,8 @@ body {
   min-height: 100vh;
 }
 a {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
-  text-decoration-thickness: 0.2rem;
-  text-decoration-skip-ink: auto;
+  text-decoration: none;
   cursor: pointer;
-  text-decoration-color: var(--THEME_UNDERLINE, black);
 }
 
 a:focus,
