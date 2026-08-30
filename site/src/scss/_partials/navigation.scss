@@ -17,6 +17,8 @@
 }
 
 .l-navigation a {
+  text-decoration: underline;
+  text-decoration-color: var(--THEME_UNDERLINE);
   font-size: 0.9rem;
 }
 
