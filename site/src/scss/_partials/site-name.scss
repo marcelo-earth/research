@@ -9,12 +9,6 @@
   flex-shrink: 0;
 }
 
-.site-logo {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-}
-
 @media (max-width: 800px) {
   .l-site-name {
     display: none;
