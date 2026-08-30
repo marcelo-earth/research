@@ -57,11 +57,28 @@ The reasons were structural. A better learning rate was never going to touch any
 
 I reframed the whole thing as a cascade: cheap deterministic filters reject obvious junk, the VLM only handles the hard cases. Dual RGB + SWIR input. Full fine-tune instead of LoRA. Frontier-model teacher labels. A temporal train/test split so Sentinel-2's 5-day revisit couldn't leak near-duplicates across it. And the real-domain eval running from the first day this time, not bolted on at the end.
 
+```mermaid
+flowchart TB
+    T[Every tile] --> F{Deterministic filters}
+    F -- obvious ocean / cloud / empty --> S[SKIP]
+    F -- hard case --> V[VLM<br/>RGB + SWIR<br/>full fine-tune]
+    V --> P[Priority<br/>CRITICAL to SKIP]
+```
+
 | version | change | overall | CRITICAL recall |
 |---|---|---|---|
 | v6b | full fine-tune, dual image | 6/11 | 0/4 |
 | v6c | 5x CRITICAL upsample | 6/11 | 0/4 |
 | v6d | CRITICAL 10 to 30, MEDIUM 22 to 6 | 4/11 | 3/4 |
+
+```mermaid
+%%{init: {"themeVariables": {"xyChart": {"backgroundColor": "#ffffff", "titleColor": "#222222", "plotColorPalette": "#7a97d6", "xAxisLabelColor": "#222222", "xAxisTitleColor": "#222222", "xAxisTickColor": "#767676", "xAxisLineColor": "#767676", "yAxisLabelColor": "#222222", "yAxisTitleColor": "#222222", "yAxisTickColor": "#767676", "yAxisLineColor": "#767676"}}}}%%
+xychart-beta
+    title "CRITICAL recall by attempt"
+    x-axis ["filtered", "oversampled 10x", "v6b", "v6c", "v6d"]
+    y-axis "recall" 0 --> 1
+    bar [0, 0, 0, 0, 0.75]
+```
 
 v6b and v6c collapsed everything to `MEDIUM` (recall 1.0, precision 0.55). v6d finally detected active hazards, but overall accuracy *dropped* to 36%, and reading the per-sample results it was mostly learning "this region is where floods happen" rather than "this image shows flooding". It over-escalated any tile near a flood-prone area.
 
