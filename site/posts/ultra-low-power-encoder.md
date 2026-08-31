@@ -1,7 +1,7 @@
 ---
 title: Ultra Low Power Encoder
 date: "2025-02-05"
-description: ""
+description: "How to build an ultra low power encoder for LLMs"
 tags:
   - llm
   - ai
