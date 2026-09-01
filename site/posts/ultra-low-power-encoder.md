@@ -73,6 +73,20 @@ Now inside the decoder, there are three levels of operations in each layer.
 
 The only part that meets the encoder and decoder is the cross-attention.
 
+```mermaid
+flowchart TB
+    IN[El gato come pescado] --> SA
+    subgraph enc["Encoder x6"]
+        SA[Self-Attention<br/>bidirectional<br/>sees past and future] --> FF1[FFN]
+    end
+    FF1 --> M[(Memory<br/>context-enriched vectors)]
+    subgraph dec["Decoder x6"]
+        MSA[Self-Attention<br/>masked / causal<br/>sees only the past] --> CA[Cross-Attention] --> FF2[FFN]
+    end
+    M == the only meeting point ==> CA
+    FF2 --> OUT[The cat eats fish]
+```
+
 ### When the attention formula is applied
 
 And the attention formula is applied at two points:
