@@ -28,6 +28,7 @@
           --THEME_HIGHLIGHT: {{site.theme.primary.highlight}};
           --THEME_HOVER: #404040;
           --THEME_UNDERLINE: #2563EB;
+          --THEME_RULE: #C8D5F7;
           --COLOR_DARK: #333;
           --COLOR_LIGHTER: #eaeaea;
           --COLOR_MID: #767676;
@@ -40,23 +41,10 @@
             --THEME_HIGHLIGHT: #fff;
             --THEME_HOVER: #e8e8e8;
             --THEME_UNDERLINE: #C8D5F7;
+            --THEME_RULE: #404040;
             --COLOR_DARK: #dedede;
             --COLOR_LIGHTER: #000;
             --COLOR_MID: #c1c1c1;
-          }
-        }
-
-        .theme-secondary {
-          --THEME_BACKGROUND: {{site.theme.secondary.background}};
-          --THEME_COLOR: #404040;
-          --THEME_HIGHLIGHT: #000;
-        }
-
-        @media (prefers-color-scheme: dark) {
-          .theme-secondary {
-            --THEME_BACKGROUND: {{site.theme.secondary.background}};
-            --THEME_COLOR: #e8e8e8;
-            --THEME_HIGHLIGHT: #fff;
           }
         }
       </style>
@@ -107,4 +95,4 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
   </body>
-</html>
+</html>
