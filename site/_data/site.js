@@ -2,7 +2,7 @@ module.exports = {
   name: "Research on Earth",
   shortDesc:
     "Research papers and investigations by Marcelo Arias.",
-  url: "https://research.marcelo.earth/",
+  url: "https://research.marcelo.earth",
   authorEmail: "hello@marceloarias.com",
   authorHandle: "@marcelo_earth",
   authorName: "Marcelo Arias",
