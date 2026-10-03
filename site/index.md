@@ -10,6 +10,3 @@ socialImage: ""
   Research and experiments
 </p>
 
-<p class="l-second">
-  Marcelo Arias
-</p>
