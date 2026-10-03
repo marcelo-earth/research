@@ -11,12 +11,19 @@
 
 .skip-content:focus {
   top: 0;
+  left: 0;
+  z-index: 50;
+  padding: 1rem;
+  color: var(--THEME_BACKGROUND);
+  background: var(--THEME_COLOR);
+  text-decoration: none;
+  outline: 2px solid var(--THEME_UNDERLINE);
+  outline-offset: 2px;
   border: 0;
   clip: unset;
   height: auto;
   margin: 0;
   overflow: visible;
-  padding: 0;
   width: auto;
   white-space: wrap;
 }
