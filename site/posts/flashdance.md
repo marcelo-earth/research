@@ -1,7 +1,7 @@
 ---
 title: "FlashDance: Flash Attention vs Vanilla Attention"
 date: "2026-10-03"
-description: "Benchmarks of fused attention against a vanilla implementation across sequence length, head dimension, batch size and precision"
+description: "How much faster fused attention really is"
 tags:
   - llm
   - attention
