@@ -1,7 +1,7 @@
 ---
 title: "TokTok: A Spanish Tokenizer"
 date: "2026-03-08"
-description: ""
+description: "Training a Spanish-only tokenizer and comparing it to GPT-4"
 tags:
   - nlp
   - tokenization
