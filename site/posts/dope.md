@@ -1,7 +1,7 @@
 ---
 title: "Dope: Comparing Position Encodings"
 date: "2026-10-03"
-description: "Sinusoidal, learned, RoPE and ALiBi implemented from scratch and compared on perplexity and length generalization"
+description: "Four position encodings on longer sequences"
 tags:
   - llm
   - attention
