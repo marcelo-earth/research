@@ -7,6 +7,6 @@ socialImage: ""
 ---
 
 <p class="l-first">
-  Research and experiments
+  Research, experiments and pet projects on LLMs & AI
 </p>
 
