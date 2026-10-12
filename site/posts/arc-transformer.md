@@ -1,7 +1,7 @@
 ---
 title: "ARC Transformer: 42.75% of 44% on ARC-AGI-1"
 date: "2026-10-11"
-description: "Reproducing a small transformer trained from scratch on ARC puzzles, and what it cost"
+description: "Reproducing a small transformer trained from scratch on ARC puzzles"
 tags:
   - llm
   - arc
