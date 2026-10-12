@@ -8,7 +8,7 @@ tags:
   - reproduction
 ---
 
-**Status: partial.** The point reproduction is done and verified. The ablations and the under-$1 cost target are not.
+The point reproduction is done and verified. The ablations and the under-$1 cost target are not.
 
 ## Question
 
